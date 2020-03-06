@@ -1,0 +1,32 @@
+
+/* ----- common start -----*/
+
+h1{
+    font-size: 165%;  
+}
+
+/* breadcrumb start*/
+.breadcrumb {
+    font-size: 80%;
+    background-color: transparent;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: none; }
+    .bc-icons-2 .breadcrumb-item.active {
+    color: #455a64; }
+
+/* breadcrumb end*/
+
+/* ----- common end ----- */
+
+
+
+/* 初めての方へ start */
+
+/* 初めての方へ end */
