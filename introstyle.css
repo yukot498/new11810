@@ -5,6 +5,18 @@ h1{
     font-size: 165%;  
 }
 
+
+
+@media screen and (max-width:415px){
+    /*SP 415px以下で適用する内容*/
+    h1{
+        font-size: 165%;  
+    }
+    
+    h2{
+        font-size: 135%;  
+    }
+}
 /* breadcrumb start*/
 .breadcrumb {
     font-size: 80%;
