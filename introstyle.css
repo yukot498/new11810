@@ -8,12 +8,16 @@ h1{
 
 
 @media screen and (max-width:415px){
-    /*SP 415px以下で適用する内容*/
+    /*SP 415px以下で適用*/
     h1{
         font-size: 165%;  
     }
     
     h2{
+        font-size: 135%;  
+    }
+
+    h3{
         font-size: 135%;  
     }
 }
