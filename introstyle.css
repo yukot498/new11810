@@ -1,3 +1,4 @@
+/* ----- 初めての方へ start -----*/
 
 /* ----- common start -----*/
 
@@ -5,6 +6,9 @@ h1{
     font-size: 165%;  
 }
 
+.small-text{
+	font-size: 11px;
+}
 
 
 @media screen and (max-width:415px){
@@ -41,10 +45,27 @@ h1{
 
 /* ----- common end ----- */
 
+/* how to resister start*/
+#resister .card.card-image {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
 
+#resister .card {
+    font-weight: 400;
+    border: 0;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+/* how to resister end*/
 
-/* ----- 初めての方へ start -----*/
-
+/* what is delta group start*/
+#whatis [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
 /* view more start*/
 
 @media screen and (max-width:415px){
@@ -83,7 +104,7 @@ h1{
 	letter-spacing: 0.05em;
 	color: #ffffff;
 	border-radius: 20px;
-	background-color: rgba(27, 37, 56, 1);
+	background: linear-gradient(40deg, #45cafc, #303f9f);
 }
 .cp_box input {
 	display: none;
@@ -107,8 +128,18 @@ h1{
 }
 }
 
-
-
 /* view more end*/
+
+/* what is delta group end*/
+
+/* main job start*/
+#mainjob .card {
+    font-weight: 400;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* main job end*/
 
 /* ----- 初めての方へ end ----- */
