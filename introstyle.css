@@ -10,6 +10,16 @@ h1{
 	font-size: 11px;
 }
 
+.btn-rounded-blue{
+	border-radius: 42px / 55px;
+	background: linear-gradient(40deg, #45cafc, #303f9f);
+}
+
+.btn-rounded-orange{
+	border-radius: 42px / 55px;
+	background: linear-gradient(40deg, #ffdf89, #FFAB01);
+}
+
 
 @media screen and (max-width:415px){
     /*SP 415px以下で適用*/
@@ -23,7 +33,12 @@ h1{
 
     h3{
         font-size: 135%;  
-    }
+	}
+	
+	hr {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
 }
 /* breadcrumb start*/
 .breadcrumb {
@@ -140,6 +155,17 @@ h1{
     box-shadow: none;
 }
 
+
+@media screen and (max-width:321px){
+    /*SP 321px以下で適用*/
+	#mainjob .job-title {
+		padding-left: 7px;
+	}
+
+	#mainjob .job-example {
+		padding-right: 7px;
+	}
+}
 /* main job end*/
 
 /* ----- 初めての方へ end ----- */
