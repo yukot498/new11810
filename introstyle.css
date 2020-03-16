@@ -15,7 +15,7 @@ h3{
 }
 
 .bg-blue {
-    background-color: #303f9f !important;
+    background-color: #3A87CF !important;
 }
 
 .btn-rounded-blue{
@@ -175,11 +175,32 @@ h3{
     box-shadow: none;
 }
 
+#mainjob .card-text {
+	font-size: 11px;
+}
+
 .md-progress .progress-bar {
     height: .25rem;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+@media screen and (max-width:415px){
+    /*SP 415px以下で適用*/
+
+    h3{
+        font-size: 115%;  
+	}
+	
+	hr {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	#mainjob .progress-bar{
+		width: 57% !important;
+	}
 }
 
 
