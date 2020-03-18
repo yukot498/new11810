@@ -68,7 +68,17 @@ h3{
 
 /* ----- common end ----- */
 
+/* reason start*/
+
+#reason .check-icon {
+    color: #FFAA00;
+}
+
+/* reason end*/
+
 /* how to resister start*/
+
+
 #resister .card.card-image {
     width: 100%;
     background-position: center;
@@ -93,14 +103,14 @@ h3{
 
 @media screen and (max-width:415px){
     /*SP 415px以下で適用*/
-.cp_box *, .cp_box *:before, .cp_box *:after {
+#whatis.cp_box *, #whatis.cp_box *:before, #whatis.cp_box *:after {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.cp_box {
+#whatis.cp_box {
 	position: relative;
 }
-.cp_box label {
+#whatis.cp_box label {
 	position: absolute;
 	z-index: 1;
 	bottom: 0;
@@ -111,10 +121,10 @@ h3{
 	/* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
 	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
 }
-.cp_box input:checked + label {
+#whatis.cp_box input:checked + label {
 	background: inherit; /* 開いた時にグラデーションを消す */
 }
-.cp_box label:after {
+#whatis.cp_box label:after {
 	line-height: 2.5rem;
 	position: absolute;
 	z-index: 2;
@@ -122,29 +132,30 @@ h3{
 	left: 50%;
 	width: 16rem;
 	font-family: FontAwesome;
-	content: '\f13a'' 続きをよむ';
+	content: ' 続きをよむ';
 	transform: translate(-50%, 0);
 	letter-spacing: 0.05em;
 	color: #ffffff;
 	border-radius: 20px;
 	background: linear-gradient(40deg, #45cafc, #303f9f);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
-.cp_box input {
+#whatis.cp_box input {
 	display: none;
 }
-.cp_box .cp_container {
+#whatis.cp_box .cp_container {
 	overflow: hidden;
 	height: 550px; /* 開く前に見えている部分の高さ */
 	transition: all 0.5s;
 }
-.cp_box input:checked + label {
+#whatis.cp_box input:checked + label {
 	/* display: none ; 閉じるボタンを消す場合解放 */
 }
-.cp_box input:checked + label:after {
+#whatis.cp_box input:checked + label:after {
 	font-family: FontAwesome;
-	content: '\f139'' 閉じる';
+	content: ' 閉じる';
 }
-.cp_box input:checked ~ .cp_container {
+#whatis.cp_box input:checked ~ .cp_container {
 	height: auto;
 	padding-bottom: 30px; /* 閉じるボタンのbottomからの位置 */
 	transition: all 0.5s;
@@ -185,7 +196,16 @@ h3{
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+@media screen and (min-width:996px){
+    /*PC 996px以上で適用*/
+	#mainjob .job-title .strong{
+		font-weight: bold;
+	}
 
+	#mainjob .job-example .small-text{
+		color: #0059B2;
+	}
+}
 @media screen and (max-width:415px){
     /*SP 415px以下で適用*/
 
@@ -215,5 +235,99 @@ h3{
 	}
 }
 /* main job end*/
+
+/* interview start*/
+
+
+	 #interview .customer-icon{
+        color:#FFAA00;
+      }
+  
+      @media only screen and (max-width: 768px){
+        #interview .testi-carousel__item {
+          background: #fff;
+          padding: 20px 15px;
+          margin: 5px 15px;
+          transition: all .3s ease;
+      }
+    }
+  
+    #interview .cp_box *, .cp_box *:before, .cp_box *:after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    #interview .cp_box {
+      position: relative;
+    }
+    #interview .cp_box label {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      width: 100%;
+      height: 140px; /* グラデーションの高さ */
+      cursor: pointer;
+      text-align: center;
+      /* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+      background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+    }
+    #interview .cp_box input:checked + label {
+      background: inherit; /* 開いた時にグラデーションを消す */
+    }
+    #interview .cp_box label:after {
+      line-height: 2.5rem;
+      position: absolute;
+      z-index: 2;
+      bottom: 20px;
+      left: 50%;
+      width: 16rem;
+      font-family: FontAwesome;
+      content: '続きをよむ';
+      transform: translate(-50%, 0);
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      border-radius: 20px;
+	  background: linear-gradient(40deg, #45cafc, #303f9f);
+	  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    #interview .cp_box input {
+      display: none;
+    }
+    #interview .cp_box .cp_container {
+      overflow: hidden;
+      height: 250px; /* 開く前に見えている部分の高さ */
+      transition: all 0.5s;
+	}
+	
+	@media screen and (max-width: 415px){
+	#interview .cp_box .cp_container {
+    overflow: hidden;
+    height: 240px;
+    transition: all 0.5s;
+}
+	}
+    #interview .cp_box input:checked + label {
+      /* display: none ; 閉じるボタンを消す場合解放 */
+    }
+    #interview .cp_box input:checked + label:after {
+      font-family: FontAwesome;
+      content: ' 閉じる';
+    }
+    #interview .cp_box input:checked ~ .cp_container {
+      height: auto;
+      padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
+      transition: all 0.5s;
+    }
+  
+    #interview .cp_box label {
+      display: inline-block;
+      margin-bottom: 0rem;
+  }
+
+  #interview .span-underline{
+    background: linear-gradient(transparent 70%, rgb(252, 216, 145) 7%);
+}
+  
+
+/* interview end*/
 
 /* ----- 初めての方へ end ----- */
