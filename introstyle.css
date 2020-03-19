@@ -330,4 +330,47 @@ h3{
 
 /* interview end*/
 
+/* cv start*/
+#cv .pricing-card {
+  text-align: center;
+}
+#cv .card {
+  font-weight: 400;
+  border: 0;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#cv .pricing-card .price {
+  position: relative;
+  padding-top: 3.5rem;
+}
+/* .blue {
+  background-color: #2196f3 !important;
+} */
+#cv .pricing-card .price .version {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: .25rem .25rem 0 0;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#cv .pricing-card .striped {
+  padding: 1rem;
+}
+
+
+#cv .check-icon,
+#cv .lightbulb-icon {
+  color: #FFAA00;
+}
+
+#cv .bg-orange {
+  background: #fff3e0;
+}
+
+/* cv end*/
+
 /* ----- 初めての方へ end ----- */
